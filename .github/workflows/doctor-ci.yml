@@ -2,10 +2,10 @@ name: Doctor Service CI
 
 on:
   push:
-    paths:
-      - 'doctor-service/**'
     branches:
       - main
+    paths:
+      - 'doctor-service/**'
 
 jobs:
   build:
@@ -26,4 +26,4 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-       run: mvn clean install -DskipTests
+        run: mvn clean package -DskipTests
