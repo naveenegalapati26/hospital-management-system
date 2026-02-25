@@ -26,6 +26,6 @@ public class DoctorService {
 
     public Doctor getById(Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Doctor not found"));
+                .orElseThrow(() -> new RuntimeException("Doctor is not founded"));
     }
 }
