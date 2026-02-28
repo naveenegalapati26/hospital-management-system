@@ -3,8 +3,12 @@ name: Doctor Service CI
 on:
   push:
     branches:
-        - main
-             - develop
+      - main
+      - develop
+
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   build:
