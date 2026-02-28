@@ -3,7 +3,8 @@ name: Doctor Service CI
 on:
   push:
     branches:
-      - main
+        - main
+             - develop
 
 jobs:
   build:
